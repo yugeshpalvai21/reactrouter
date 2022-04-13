@@ -12,9 +12,19 @@ const Home = () => {
   )
 }
 
+const About = () => {
+  return (
+    <div>
+      <h4>About</h4>
+      <p>Brief Description</p>
+    </div>
+  )
+}
+
 const router = (
   <BrowserRouter>
-      <Route path="/" component={Home} />
+      <Route path="/" component={Home} exact={true} />
+      <Route path="/about" component={About} />
   </BrowserRouter>
 )
 
