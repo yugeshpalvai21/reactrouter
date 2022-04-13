@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Header from './Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Home = () => {
@@ -37,6 +37,7 @@ const PageNotFound = () => (<p>Sorry! Page Doesn't existed</p>)
 
 const router = (
   <BrowserRouter>
+      <Header />
       <Switch>
         <Route path="/" component={Home} exact={true} />
         <Route path="/about" component={About} />
