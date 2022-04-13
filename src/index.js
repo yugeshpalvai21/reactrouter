@@ -21,10 +21,21 @@ const About = () => {
   )
 }
 
+const Portfolio = () => {
+  return (
+    <div>
+      <p>Portfolios Section</p>
+    </div>
+  )
+}
+
+
+
 const router = (
   <BrowserRouter>
       <Route path="/" component={Home} exact={true} />
       <Route path="/about" component={About} />
+      <Route path="/portfolio" component={Portfolio} />
   </BrowserRouter>
 )
 
