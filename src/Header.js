@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { NavLink, NavNavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div>
       <h3>Porffolio APP</h3>
-      <Link to="/">Home</Link>
-      <Link to="/About">About</Link>
-      <Link to="/portfolio">Portfolio</Link>
-      <Link to="/contact">Contact</Link>
+      <NavLink to="/" activeClassName="active" exact={true}>Home</NavLink>
+      <NavLink to="/About" activeClassName="active">About</NavLink>
+      <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+      <NavLink to="/contact" activeClassName="active">Contact</NavLink>
     </div>
   )
 }

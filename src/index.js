@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './styles.css';
 
 const Home = () => {
   return (
