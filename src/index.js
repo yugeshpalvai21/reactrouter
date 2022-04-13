@@ -29,6 +29,10 @@ const Portfolio = () => {
   )
 }
 
+const Contact = () => (<p>Contact Details</p>)
+
+const PageNotFound = () => (<p>Sorry! Page Doesn't existed</p>)
+
 
 
 const router = (
@@ -36,6 +40,8 @@ const router = (
       <Route path="/" component={Home} exact={true} />
       <Route path="/about" component={About} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
+      <Route component={PageNotFound} />
   </BrowserRouter>
 )
 
