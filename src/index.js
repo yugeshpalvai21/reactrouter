@@ -1,39 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+import Header from './components/Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './styles.css';
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Welcome To Portfolio App</h1>
-      <p>website to maintain portfolio</p>
-    </div>
-  )
-}
-
-const About = () => {
-  return (
-    <div>
-      <h4>About</h4>
-      <p>Brief Description</p>
-    </div>
-  )
-}
-
-const Portfolio = () => {
-  return (
-    <div>
-      <p>Portfolios Section</p>
-    </div>
-  )
-}
-
-const Contact = () => (<p>Contact Details</p>)
-
-const PageNotFound = () => (<p>Sorry! Page Doesn't existed</p>)
-
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import PageNotFound from './components/PageNotFound';
 
 
 const router = (
